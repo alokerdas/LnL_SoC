@@ -127,7 +127,7 @@ module testbench;
   assign pcwire[10] = soc.\cpu0.pc[10] ;
   assign pcwire[11] = soc.\cpu0.pc[11] ;
 `else
-  assign adr = soc.addr_to_memio;
+  assign adr = soc.cpu0.addr;
   assign ewire = soc.cpu0.e;
   assign twire = soc.cpu0.t;
   assign acwire = soc.cpu0.ac;
