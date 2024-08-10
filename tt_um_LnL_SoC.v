@@ -26,7 +26,7 @@ module tt_um_LnL_SoC (
   wire rw_to_mem, load_spi, unload_spi, en_to_spi, en_to_dev, en_to_mem, en_to_boot;
 
   assign uio_oe = 8'hF0; // Lower nibble all input, Upper all output
-  assign uio_out[6:0] = 7'h00; // uio_out unused bits
+  assign uio_out[3:0] = 4'h0; // uio_out unused bits
 
   always @(posedge clk or negedge rst_n)
     if (~rst_n) rst_n_i <= 1'b0;

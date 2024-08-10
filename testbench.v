@@ -20,9 +20,9 @@ module testbench;
     #100 rs = 1'b0;
     #1500 intrin = 1; keyboard = 8'h77;
     #450 intrin = 0;
-    #3200 keyboard = 8'h66; intrin = 1;
-    #550 intrin = 0; 
-    #1500 $finish;
+    #4200 keyboard = 8'h66; intrin = 1;
+    #500 intrin = 0; 
+    #4000 $finish;
   end 
 
 `ifdef DUMP_VCD
